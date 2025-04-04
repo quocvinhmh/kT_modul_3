@@ -15,16 +15,15 @@
     </button>
     <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="http://localhost:8080/Gradle___com_example___THi_Module_3_1_0_SNAPSHOT_war/view/bookList.jsp">Sách</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Học sinh</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Thẻ mượn sách</a></li>
+            <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/books?action=list">Sách</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://localhost:8080/Gradle___com_example___THi_Module_3_1_0_SNAPSHOT_war/views/borrowedBooks.jsp">Danh sách mượn</a></li>
         </ul>
     </div>
 </nav>
     <main class="flex-grow-1 p-3">
         <h1>Ứng Dụng Quản Lý mượn sách</h1>
         <h2>Giới Thiệu:</h2>
-        <p>Hệ thống Quản Lý Khu Nghỉ Dưỡng Furama giúp quản lý dịch vụ, nhân viên, khách hàng và hợp đồng thuê tại resort Furama Đà Nẵng. Ứng dụng này sử dụng công nghệ JSP, Servlet, JDBC và MySQL để xây dựng một hệ thống quản lý chuyên nghiệp và hiệu quả.</p>
+        <p>Ứng dụng này sử dụng công nghệ JSP, Servlet, JDBC và MySQL để xây dựng một hệ thống quản lý chuyên nghiệp và hiệu quả.</p>
     </main>
 </div>
 </body>

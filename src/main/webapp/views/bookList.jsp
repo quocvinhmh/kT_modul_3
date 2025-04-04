@@ -14,6 +14,7 @@
     <thead class="thead-dark">
     <tr>
       <th>ID</th>
+      <th>Mã sách</th>
       <th>Tên sách</th>
       <th>Tác giả</th>
       <th>Mô tả</th>
@@ -25,20 +26,19 @@
     <c:forEach var="book" items="${books}">
       <tr>
         <td>${book.id}</td>
-        <td>${book.nameBook}</td>
-        <td>${book.nameAuthor}</td>
-        <td>${book.describe}</td>
+        <td>${book.code}</td>
+        <td>${book.name}</td>
+        <td>${book.author}</td>
+        <td>${book.description}</td>
         <td>${book.quantity}</td>
         <td>
-          <!-- Nút mượn sách: chuyển sang trang borrowBook.jsp -->
-          <a href="${pageContext.request.contextPath}/books?action=borrow&bookId=${book.id}" class="btn btn-primary btn-sm">
-            Mượn sách
-          </a>
+          <a href="${pageContext.request.contextPath}/books?action=borrow&bookId=${book.id}" class="btn btn-primary btn-sm">Mượn sách</a>
         </td>
       </tr>
     </c:forEach>
     </tbody>
   </table>
+  <a href="http://localhost:8080/Gradle___com_example___THi_Module_3_1_0_SNAPSHOT_war/home" class="btn btn-primary btn-sm">Home</a>
 </div>
 </body>
 </html>

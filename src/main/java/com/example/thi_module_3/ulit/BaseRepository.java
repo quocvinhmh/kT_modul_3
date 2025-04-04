@@ -1,5 +1,5 @@
 
-package com.example.thi_module_3.model.ulit;
+package com.example.thi_module_3.ulit;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
